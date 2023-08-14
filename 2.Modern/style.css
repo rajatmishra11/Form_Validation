@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/abstract-technology-circuit-board_1035-14043.jpg?t=st=1692011065~exp=1692011665~hmac=0c7248dfc87ba501af51cad78b0a94025f925cb0b17da3e505b0726bbe56b7ee");
+}
+
+#create-account-form {
+  width: 400px;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: rgb(125, 197, 204);
+box-shadow: 
+  -10px -10px 15px rgba(255, 255, 255, 0.5),
+  10px 10px 15px rgba(70, 70, 70, 0.12),
+  inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+  inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin: 20px 0;
+  position: relative;
+}
+
+.input-group label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.error input {
+  border: 3px red solid;
+}
+
+.success input {
+  border: 3px green solid;
+}
+
+.input-group i {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  visibility: hidden;
+}
+
+.success i.fa-check-circle {
+  visibility: visible;
+  color: green;
+}
+
+.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+.input-group p {
+  font-size: 15px;
+  color: red;
+  visibility: hidden;
+}
+
+.error p {
+  visibility: visible;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(249, 109, 8);
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+}
