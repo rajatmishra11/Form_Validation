@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form</title>
+  </head>
+  <body>
+    <script>
+      function mydata() {
+        var a = document.getElementById("n1");
+        var b = document.getElementById("n2");
+        if (a.value === "" || b.value === "") {
+          alert("All fields are required");
+          return false;
+        }
+        if (a.value === "Rajat" && b.value === "1234") {
+          return true;
+        } else return false;
+      }
+    </script>
+
+    <form onsubmit="return mydata()" action="new.html">
+      Username:<input type="text" id="n1" /><br /><br />
+      Password:<input type="password" id="n2" /><br /><br />
+      <input type="submit" value="Login" />
+    </form>
+  </body>
+</html>
